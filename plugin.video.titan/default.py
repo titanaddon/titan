@@ -6,7 +6,7 @@ from resources.lib.libraries import client
 from resources.lib.libraries import cloudflare
 from resources.lib.libraries import cartoons
 import threading
-hosts = ["https://archive.org/download/NaviXPlaylist/playlist_mari.xml", "http://pastebin.com/raw.php?i=Az7KxySD"]
+hosts = ["https://archive.org/download/hifimoviesdocs/main_page.xml", "https://archive.org/download/NaviXPlaylist/playlist_mari.xml", "http://pastebin.com/raw.php?i=Az7KxySD"]
 try: action = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))['action']
 except: action = None
 addon_id = 'plugin.video.titan'
@@ -37,10 +37,11 @@ EXCLUDE_HATER   = ['spartan','techtimeruu', 'spartanpixel' , 'beast', 'royalist'
 dialog = xbmcgui.Dialog()
 def CATEGORIES():
 	Check_haters()	
-	addDir2('Featured Movies','https://archive.org/download/hifimoviesdocs/HdMovies.xml',21,icon4,fanartfeature)
-	addDir2('M&Ms Awesome Tv Stuff','https://archive.org/download/NaviXPlaylist/playlist_mari.xml',6,icon2,fanartmm)
+	addDir2('HD Movies','https://archive.org/download/hifimoviesdocs/HdMovies.xml',21,icon4,fanartfeature)
+	addDir2('M&Ms World','https://archive.org/download/NaviXPlaylist/playlist_mari.xml',6,icon2,fanartmm)
+	addDir2('HiFi2007 World','https://archive.org/download/hifimoviesdocs/main_page.xml',10,icon3,fanarthifi)	
 	addDir2('Midnight Society','http://pastebin.com/raw/qV9kG6Fk',30,icon5,fanartj)
-
+    
 	addDir2('Anime Zone','https://archive.org/download/',999,icon_anime,animefan)
 	addDir2('Random 3 Picks','http://',102,randomico,fanart)
 	addDir2('Search','http://titan',8,searchicon,fanart)
