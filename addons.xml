@@ -176,4 +176,26 @@
 			<platform>all</platform>
 	</extension>
 </addon>
+
+<addon id="plugin.video.tubelive"
+	name="tubelive"
+	version="1.0.0"
+	provider-name="Titan">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">tubelive  live streams from youtube</summary>
+    <description lang="en">credits to coldkeys for the code used in this addon
+	</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
 </addons>
