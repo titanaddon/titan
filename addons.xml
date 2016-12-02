@@ -44,6 +44,28 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.DonaldJTrump"
+	name="Donald J Trump"
+	version="1.0.1"
+	provider-name="Donald J. Trump">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">credits to coldkeys all the best Donald J. Trump
+	</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
 <addon id="plugin.video.kidslearning"
 	name="kids learning"
 	version="1.0.0"
@@ -58,6 +80,50 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">kids learning</summary>
+    <description lang="en">credits to coldkeys for the code used in this addon
+	</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Mari'sKitchen"
+	name="Mari's Kitchen"
+	version="1.0.0"
+	provider-name="hifi2007">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Mari's Kitchen</summary>
+    <description lang="en">credits to coldkeys for the code used in this addon
+	</description>
+    <platform>all</platform>
+    <forum>n/a</forum>
+    <website>n/a</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.Mari'sReviewChannel"
+	name="Mari's Review Channel"
+	version="1.0.0"
+	provider-name="hifi2007">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Mari's Review Channel</summary>
     <description lang="en">credits to coldkeys for the code used in this addon
 	</description>
     <platform>all</platform>
