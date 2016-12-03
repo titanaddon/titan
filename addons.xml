@@ -44,10 +44,10 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.DonaldJTrump"
-	name="Donald J Trump"
-	version="1.0.1"
-	provider-name="Donald J. Trump">
+<addon id="plugin.video.donaldjtrump"
+	name="donald j trump"
+	version="2.0.0"
+	provider-name="donald j trump">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" version="2.0.0"/>
@@ -57,8 +57,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">credits to coldkeys all the best Donald J. Trump
+    <summary lang="en">donald j trump</summary>
+    <description lang="en">credits to coldkeys all the best donald j trump
 	</description>
     <platform>all</platform>
     <forum>n/a</forum>
@@ -124,28 +124,6 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Mari's Review Channel</summary>
-    <description lang="en">credits to coldkeys for the code used in this addon
-	</description>
-    <platform>all</platform>
-    <forum>n/a</forum>
-    <website>n/a</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.OwnagePranks"
-	name="Ownage Pranks"
-	version="1.0.0"
-	provider-name="marifi">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Ownage Pranks</summary>
     <description lang="en">credits to coldkeys for the code used in this addon
 	</description>
     <platform>all</platform>

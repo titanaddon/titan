@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.DonaldJTrump"
-	name="Donald J Trump"
-	version="1.0.1"
-	provider-name="Donald J. Trump">
+<addon id="plugin.video.donaldjtrump"
+	name="donald j trump"
+	version="2.0.0"
+	provider-name="donald j trump">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" version="2.0.0"/>
@@ -12,8 +12,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en"></summary>
-    <description lang="en">credits to coldkeys all the best Donald J. Trump
+    <summary lang="en">donald j trump</summary>
+    <description lang="en">credits to coldkeys all the best donald j trump
 	</description>
     <platform>all</platform>
     <forum>n/a</forum>

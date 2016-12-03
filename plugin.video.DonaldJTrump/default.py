@@ -14,13 +14,12 @@ import plugintools
 import xbmc,xbmcaddon
 from addon.common.addon import Addon
 
-addonID = 'plugin.video.tubelive'
+addonID = 'plugin.video.donaldjtrump'
 addon = Addon(addonID, sys.argv)
 local = xbmcaddon.Addon(id=addonID)
 icon = local.getAddonInfo('icon')
 
 YOUTUBE_CHANNEL_ID_1 = "UC_NRgn1L4zVWPOEI5Mt5Tog"
-
 
 
 
@@ -49,7 +48,5 @@ def main_list(params):
         title="Transition 2017",
         url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID_1+"/",
         thumbnail="https://yt3.ggpht.com/-mOZSBX1cCLo/AAAAAAAAAAI/AAAAAAAAAAA/3HNbrZZBmmc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg",
-        folder=True )
-		
-		    
+        folder=True )    
 run()
