@@ -14,13 +14,15 @@ import plugintools
 import xbmc,xbmcaddon
 from addon.common.addon import Addon
 
-addonID = 'plugin.video.DocumentaryTV'
+addonID = 'plugin.video.spinninrecords'
 addon = Addon(addonID, sys.argv)
 local = xbmcaddon.Addon(id=addonID)
 icon = local.getAddonInfo('icon')
 
-YOUTUBE_CHANNEL_ID_1 = "UCcO4t8Q0fWrwt7taToZsyFg"
-YOUTUBE_CHANNEL_ID_2 = "UCVB54sxE7pliAJYxeRbiz7A"
+YOUTUBE_CHANNEL_ID_1 = "PLX9_I-EOJPdFuOjcI2zkmTck55homHEBE"
+YOUTUBE_CHANNEL_ID_2 = "PLlZ10h1bYswNr7BWSKrXlbfg5ByJV48xI"
+YOUTUBE_CHANNEL_ID_3 = "PLZXL7dfsQQpbxDCjR_Clj1nliPOuFtK2L"
+
 
 
 # Entry point
@@ -44,17 +46,25 @@ def main_list(params):
 
     plugintools.add_item( 
         #action="", 
-        title="Documentary TV",
-        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID_1+"/",
-        thumbnail="https://yt3.ggpht.com/-G09Iq74Fs-I/AAAAAAAAAAI/AAAAAAAAAAA/bH_puDCzDY4/s100-c-k-no-mo-rj-c0xffffff/photo.jpg",
+        title="Old Movies 1",
+         url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID_1+"/",
+        thumbnail="https://i.imgsafe.org/1d49e98da1.jpg",
+        folder=True )  
+
+
+    plugintools.add_item( 
+        #action="", 
+        title="Old Movies 2",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID_2+"/",
+        thumbnail="https://i.imgsafe.org/1d49e98da1.jpg",
         folder=True )
 
     plugintools.add_item( 
         #action="", 
-        title="National Geographic",
-        url="plugin://plugin.video.youtube/channel/"+YOUTUBE_CHANNEL_ID_2+"/",
-        thumbnail="https://i.ytimg.com/vi/KpDghmRR68Y/hqdefault.jpg?custom=true&w=320&h=180&stc=true&jpg444=true&jpgq=90&sp=68&sigh=Mmj3gqqb4G-Zuacxiyw0Eb5iYiY",
+        title="Bollywood Old Movies",
+        url="plugin://plugin.video.youtube/playlist/"+YOUTUBE_CHANNEL_ID_3+"/",
+        thumbnail="https://i.imgsafe.org/1d371807da.jpg",
         folder=True )
-
-    
+		
+		
 run()
