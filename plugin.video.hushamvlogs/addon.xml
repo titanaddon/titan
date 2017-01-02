@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.tubelive"
-	name="tubelive"
-	version="2.0.0"
-	provider-name="Titan">
+<addon id="plugin.video.hushamvlogs"
+	name="Husham VLOGs"
+	version="1.0.0"
+	provider-name="hifi2007">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.addon.common" version="2.0.0"/>
@@ -12,8 +12,8 @@
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">tubelive  live streams from youtube</summary>
-    <description lang="en">credits to coldkeys for the code used in this addon
+    <summary lang="en">husham vlogs</summary>
+    <description lang="en">Husham VLOGs from youtube credits to coldkeys for some code used
 	</description>
     <platform>all</platform>
     <forum>n/a</forum>
