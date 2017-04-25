@@ -6,29 +6,27 @@ from resources.lib.libraries import client
 from resources.lib.libraries import cloudflare
 from resources.lib.libraries import cartoons
 import threading
-hosts = ["https://archive.org/download/hifimoviesdocs/main_page.xml", "https://archive.org/download/NaviXPlaylist/playlist_mari.xml", "http://pastebin.com/raw.php?i=Az7KxySD"]
+hosts = ["https://archive.org/download/hifimoviesdocs/main_page.xml", "https://archive.org/download/NaviXPlaylist/playlist_mari.xml", "https://pastebin.com/raw/N43zpcjG"]
 try: action = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))['action']
 except: action = None
 addon_id = 'plugin.video.titan'
 selfAddon = xbmcaddon.Addon(id=addon_id)
 addon = Addon(addon_id, sys.argv)
 fanart = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id , 'fanart.jpg'))
-randomico = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/random.png'))
+randomico = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/random1.png'))
 icon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'icon.png'))
 icon2 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/mm.png'))
 icon3 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/hifi.png'))
 icon4 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/featured.png'))
 icon5 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/jicon.png'))
 icon6 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/g10icon.png'))
-icon_anime = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/anime.png'))
-fanarthifi = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/hifibg.jpg'))
-fanartmm = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/mmbg.jpg'))
-fanartfeature = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/featuredbg.jpg'))
-fanartj = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/jfanart.jpg'))
-fanartg10 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/icefanart.jpeg'))
-animefan = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/animefan.jpg'))
-searchicon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/search.png'))
-iceicon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/ice.png'))
+icon7 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/mari.png'))
+icon8 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/featured2.png'))
+fanarthifi = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/hifibe.jpg'))
+fanartmm = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/mmbb.jpg'))
+fanartm = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/dfanart.jpg'))
+fanartfeatured2 = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/lo.jpg'))
+searchicon = xbmc.translatePath(os.path.join('special://home/addons/' + addon_id, 'art/search1.png'))
 metaset = selfAddon.getSetting('enable_meta')
 addon = Addon(addon_id, sys.argv)
 livetv = ['.m3u8','.ts=','rtmp://','iptvnation']
@@ -37,12 +35,12 @@ EXCLUDE_HATER   = ['spartan','techtimeruu', 'spartanpixel' , 'beast', 'royalist'
 dialog = xbmcgui.Dialog()
 def CATEGORIES():
 	Check_haters()	
-	addDir2('Featured Movies','https://archive.org/download/hifimoviesdocs/HdMovies.xml',21,icon4,fanartfeature)
+	addDir2('Featured Movies','https://archive.org/download/hifimoviesdocs/HdMovies.xml',21,icon8,fanartfeatured2)
 	addDir2('M&Ms World','https://archive.org/download/NaviXPlaylist/playlist_mari.xml',6,icon2,fanartmm)
 	addDir2('HiFi2007 World','https://archive.org/download/hifimoviesdocs/main_page.xml',10,icon3,fanarthifi)	
-	addDir2('Midnight Society','http://pastebin.com/raw/qV9kG6Fk',30,icon5,fanartj)
-    
 	
+    
+	addDir2('3D Movies','https://archive.org/download/hifimoviesdocs/3D.xml',6,icon7,fanartm)
 	addDir2('Random 3 Picks','http://',102,randomico,fanart)
 	addDir2('Search','http://titan',8,searchicon,fanart)
 	xbmc.executebuiltin("Container.SetViewMode(500)")

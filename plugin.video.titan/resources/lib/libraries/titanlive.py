@@ -25,7 +25,7 @@ import threading
 from t0mm0.common.addon import Addon
 global loop
 loop = 1
-xbmcPlayer = xbmc.Player(xbmc.PLAYER_CORE_AUTO)
+xbmcPlayer = xbmc.Player()
 addon_id = 'plugin.video.titan'
 addon = Addon(addon_id, sys.argv)
 
